@@ -8,8 +8,25 @@ public class CriarConta {
 		// TODO Auto-generated method stub
 		Conta usuario = new Conta();
 		
-		usuario.agencia= 124;
-		System.out.println(usuario.agencia);
+		usuario.setAgencia(148);
+		usuario.setNumero(562);
+		usuario.setTitular("Fernando");
+		usuario.depositar(500);
+		
+		System.out.println("Agência:" + usuario.getAgencia()+ " Conta:"
+		                  + usuario.getNumero()+" Titular:"+ usuario.getTitular()
+		                  +" Saldo:" +usuario.getSaldo() );
+		
+		usuario.sacar(200);
+		System.out.println("Agência:" + usuario.getAgencia()+ " Conta:"
+                + usuario.getNumero()+" Titular:"+ usuario.getTitular()
+                +" Saldo:" +usuario.getSaldo() );
+		
+		usuario.sacar(400);
+		System.out.println("Agência:" + usuario.getAgencia()+ " Conta:"
+                + usuario.getNumero()+" Titular:"+ usuario.getTitular()
+                +" Saldo:" +usuario.getSaldo() );
+		
 		
 		
 		
