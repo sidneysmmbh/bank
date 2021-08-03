@@ -18,16 +18,20 @@ public class CriarConta {
                 +" Saldo:" +usuario.getSaldo() );
 
 		
-		usuario.sacar(200);
+		usuario.saca(200);
 		System.out.println("Agência:" + usuario.getAgencia()+ " Conta:"
                 + usuario.getNumero()+" Titular:"+ usuario.getTitular().getNome()
                 +" Saldo:" +usuario.getSaldo() );
 
 		
-		usuario.sacar(400);
+		usuario.saca(400);
 		System.out.println("Agência:" + usuario.getAgencia()+ " Conta:"
                 + usuario.getNumero()+" Titular:"+ usuario.getTitular().getNome()
                 +" Saldo:" +usuario.getSaldo() );
+		
+		Conta usuario2 = new Conta(153,1585); 
+		
+	   System.out.println("resultado:" + Conta.getTotal());
 
 		
 		
